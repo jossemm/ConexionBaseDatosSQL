@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Granja El Pollón | Plataforma Avícola 360</title>
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación Fija -->
+  <header class="navbar-fixed">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="logo-icon">🐔</span>
+        <span class="brand-text">Avícola 360 | <strong>Granja El Pollón</strong></span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#productos" class="nav-link">Productos y Servicios</a>
+        <a href="#contacto" class="nav-link">Contáctenos</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="dashboards.html" class="btn-dashboard">DASHBOARDS BI</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Inicio / Hero -->
+    <section id="inicio" class="section hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Gestión inteligente para una producción avícola más eficiente</h1>
+          <p>Optimiza cada aspecto de tu granja avícola con nuestra plataforma integral. Desde el control de postura e inventario hasta la bioseguridad y trazabilidad comercial con analítica en tiempo real.</p>
+          <div class="hero-buttons">
+            <a href="dashboards.html" class="btn-primary">Ver Dashboards</a>
+            <a href="#contacto" class="btn-secondary">Contáctanos</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- Foto de gallinas ponedoras en campo abierto -->
+          <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=800&q=80" alt="Gallinas ponedoras en granja">
+        </div>
+      </div>
+
+      <!-- Barra de KPIs Globales -->
+      <div class="kpi-banner">
+        <div class="kpi-card">
+          <h3>273,920</h3>
+          <p>Aves en Producción</p>
+        </div>
+        <div class="kpi-card">
+          <h3>88</h3>
+          <p>Galpones Operativos</p>
+        </div>
+        <div class="kpi-card">
+          <h3>1.02 M</h3>
+          <p>Huevos Mes Actual</p>
+        </div>
+        <div class="kpi-card">
+          <h3>94.2%</h3>
+          <p>Tasa de Postura Promedio</p>
+        </div>
+      </div>
+
+      <!-- Beneficios de la Solución -->
+      <div class="benefits-container">
+        <h2>Beneficios de Avícola 360</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <span class="icon">📈</span>
+            <h4>Monitoreo de Postura</h4>
+            <p>Control diario de recolección, porcentajes de postura y huevo roto por galpón.</p>
+          </div>
+          <div class="benefit-card">
+            <span class="icon">💉</span>
+            <h4>Planes Sanitarios</h4>
+            <p>Registro y seguimiento de vacunas (Newcastle, Bronquitis) y desparasitaciones.</p>
+          </div>
+          <div class="benefit-card">
+            <span class="icon">📦</span>
+            <h4>Inventario de Alimento</h4>
+            <p>Control exacto de mezclas, silos de maíz, soya y núcleos vitamínicos en bodega.</p>
+          </div>
+          <div class="benefit-card">
+            <span class="icon">🚚</span>
+            <h4>Despacho y Ventas</h4>
+            <p>Trazabilidad desde la clasificación en maples hasta la entrega mayorista con FEL.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Nosotros (Misión, Visión, Valores) -->
+    <section id="nosotros" class="section nosotros-section">
+      <div class="section-title">
+        <h2>Nosotros</h2>
+      </div>
+
+      <div class="identity-card">
+        <h3>Nuestra Misión</h3>
+        <p>Producir y comercializar productos avícolas de máxima calidad mediante procesos eficientes, bioseguridad estricta y una gestión sostenible de los recursos, garantizando nutrición saludable para las familias guatemaltecas.</p>
+      </div>
+
+      <div class="identity-card">
+        <h3>Nuestra Visión</h3>
+        <p>Ser un grupo avícola referente en Centroamérica por su calidad, eficiencia operativa, innovación tecnológica y compromiso con el bienestar animal y nuestros clientes para el año 2030.</p>
+      </div>
+
+      <div class="valores-container">
+        <h3>Nuestros Valores</h3>
+        <div class="valores-grid">
+          <div class="valor-pill">Calidad</div>
+          <div class="valor-pill">Responsabilidad</div>
+          <div class="valor-pill">Bioseguridad</div>
+          <div class="valor-pill">Innovación</div>
+          <div class="valor-pill">Trabajo en Equipo</div>
+          <div class="valor-pill">Sostenibilidad</div>
+        </div>
+      </div>
+
+      <div class="facility-image">
+  <img src="assets/galpon.jpg" alt="Galpón tecnificado de postura">
+</div>
+    </section>
+
+    <!-- 3. Catálogo de Productos y Servicios -->
+    <section id="productos" class="section productos-section">
+      <div class="section-title">
+        <h2>Nuestros Productos y Servicios</h2>
+      </div>
+
+      <div class="filter-pills">
+        <button class="pill-btn active" onclick="filtrarCatalogo('todos')">Todos</button>
+        <button class="pill-btn" onclick="filtrarCatalogo('huevo')">Producción de Huevo</button>
+        <button class="pill-btn" onclick="filtrarCatalogo('servicio')">Servicios Técnicos</button>
+      </div>
+
+      <h3 class="cat-subtitle">Línea de Huevos Clasificados</h3>
+      <div class="cards-grid">
+        <div class="item-card" data-cat="huevo">
+          <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=400&q=80" alt="Huevo Pequeño">
+          <h4>Huevo Pequeño</h4>
+          <p>Huevos frescos de gallinas jóvenes, ideales para repostería y consumo diario balanceado.</p>
+          <button class="btn-card">Cotizar Pedido</button>
+        </div>
+        <div class="item-card" data-cat="huevo">
+          <img src="https://images.unsplash.com/photo-1516448620398-c5f44bf9f441?auto=format&fit=crop&w=400&q=80" alt="Huevo Mediano">
+          <h4>Huevo Mediano</h4>
+          <p>Estándar de calidad para supermercados y panaderías del mercado nacional guatemalteco.</p>
+          <button class="btn-card">Cotizar Pedido</button>
+        </div>
+        <div class="item-card" data-cat="huevo">
+          <img src="https://images.unsplash.com/photo-1506976785307-8732e854ad03?auto=format&fit=crop&w=400&q=80" alt="Huevo Grande">
+          <h4>Huevo Grande</h4>
+          <p>Huevo seleccionado con cáscara uniforme y yema de pigmentación natural enriquecida.</p>
+          <button class="btn-card">Cotizar Pedido</button>
+        </div>
+        <div class="item-card" data-cat="huevo">
+          <img src="https://images.unsplash.com/photo-1569288063643-5d29ad64df09?auto=format&fit=crop&w=400&q=80" alt="Huevo Extra Grande">
+          <h4>Huevo Extra Grande</h4>
+          <p>Presentación premium en cajas de cartón y maples de 30 unidades con alta consistencia.</p>
+          <button class="btn-card">Cotizar Pedido</button>
+        </div>
+        <div class="item-card" data-cat="huevo">
+          <img src="https://images.unsplash.com/photo-1598965675045-45c5e72c7d05?auto=format&fit=crop&w=400&q=80" alt="Huevo Jumbo">
+          <h4>Huevo Jumbo</h4>
+          <p>Nuestra mayor categoría por gramaje. Calidad de exportación y clientes gourmet.</p>
+          <button class="btn-card">Cotizar Pedido</button>
+        </div>
+      </div>
+
+      <h3 class="cat-subtitle" style="margin-top: 40px;">Servicios Especializados</h3>
+      <div class="services-grid">
+        <div class="service-box" data-cat="servicio">
+          <h4>Ventas al por Mayor</h4>
+          <p>Precios especiales por lote a cadenas y distribuidores mayoristas nacionales.</p>
+        </div>
+        <div class="service-box" data-cat="servicio">
+          <h4>Distribución Programada</h4>
+          <p>Entregas periódicas en camiones refrigerados propios según ruta asignada.</p>
+        </div>
+        <div class="service-box" data-cat="servicio">
+          <h4>Atención al Cliente</h4>
+          <p>Monitoreo continuo de pedidos y soporte postventa especializado.</p>
+        </div>
+        <div class="service-box" data-cat="servicio">
+          <h4>Control de Calidad</h4>
+          <p>Inspección por ovoscopía y certificación bacteriológica de lote.</p>
+        </div>
+        <div class="service-box" data-cat="servicio">
+          <h4>Seguimiento de Pedidos</h4>
+          <p>Trazabilidad desde la recolección en el galpón hasta la entrega física.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Contáctenos (Ubicación real de Chimaltenango) -->
+    <section id="contacto" class="section contacto-section">
+      <div class="section-title">
+        <h2>Contáctenos</h2>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Información de Contacto</h3>
+          <p><strong>Dirección:</strong> Km 48.5 Carretera Interamericana, Chimaltenango, Guatemala</p>
+          <p><strong>Teléfono:</strong> +502 7839-4400</p>
+          <p><strong>Email:</strong> operaciones@granjaelpollon.com.gt</p>
+          <p><strong>Horarios:</strong> Lunes a Sábado: 06:00 - 18:00 hrs</p>
+
+          <div class="map-box">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123512.42847527652!2d-90.87116744889753!3d14.654302322301382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85890e729a6331a9%3A0x7d6f5f9a65d792b5!2sChimaltenango!5e0!3m2!1ses!2sgt!4v1714400000000!5m2!1ses!2sgt" 
+              width="100%" height="220" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <h3>Envíanos un Mensaje</h3>
+          <form id="contactForm" onsubmit="enviarMensaje(event)">
+            <div class="form-group">
+              <label>Nombre Completo:</label>
+              <input type="text" id="contacto_nombre" required placeholder="Ej. Juan Carlos Morales">
+            </div>
+            <div class="form-group">
+              <label>Correo Electrónico:</label>
+              <input type="email" id="contacto_email" required placeholder="correo@ejemplo.com">
+            </div>
+            <div class="form-group">
+              <label>Teléfono de Contacto:</label>
+              <input type="tel" id="contacto_tel" required placeholder="5555-0101">
+            </div>
+            <div class="form-group">
+              <label>Tipo de Consulta:</label>
+              <select id="contacto_tipo">
+                <option value="mayorista">Compra Mayorista de Huevo</option>
+                <option value="gallinaza">Venta de Gallinaza / Abono</option>
+                <option value="proveedor">Oferta de Insumos o Concentrados</option>
+                <option value="soporte">Información General</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Mensaje:</label>
+              <textarea id="contacto_msg" rows="4" required placeholder="Escribe aquí los volúmenes o dudas requeridas..."></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Enviar Mensaje</button>
+              <button type="reset" class="btn-secondary">Limpiar</button>
+            </div>
+            <p id="form-feedback" class="feedback-msg"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Granja El Pollón</h4>
+        <p>Km 48.5 Carretera Interamericana, Chimaltenango</p>
+        <p>PBX: +502 7839-4400</p>
+        <p>info@granjaelpollon.com.gt</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="dashboards.html">Portal de Dashboards</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Horarios de Operación</h4>
+        <p>Producción: 24/7</p>
+        <p>Despacho a Rutas: 04:00 - 15:00 hrs</p>
+        <p>Oficinas: 08:00 - 17:00 hrs</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Granja El Pollón (ACS-ERP). Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/landing.js"></script>
+</body>
+</html>
